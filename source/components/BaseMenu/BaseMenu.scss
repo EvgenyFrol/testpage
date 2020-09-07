@@ -1,0 +1,85 @@
+.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -150%;
+  height: 100vh;
+  width: auto;
+  background: #F7654A;
+  z-index: 10;
+  transition: right 0.3s ease;
+
+  &__headline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font: 500 25px/41px "Oswald", normal;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 30px;
+
+    @media (max-width: 640px) {
+      font-size: 15px;
+      line-height: 20px;
+      margin: 30px 20px;
+    }
+  }
+
+  &__link {
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__name {
+    scroll-behavior: smooth;
+    height: 50px;
+    margin: 5px 10px 5px 10px;
+    font: 500 24px/36px "Oswald", normal;
+    color: #404149;
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.05);
+      color: #fff;
+    }
+
+    @media (max-width: 640px) { 
+      margin: 5px 10px 5px 10px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &--open {
+    right: 0;
+
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    margin: 32px 25px 0 0;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 640px) {
+      width: 20px;
+      height: 20px;
+      margin: 32px 32px 0 0;
+    }
+  }
+}

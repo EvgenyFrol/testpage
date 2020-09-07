@@ -1,0 +1,14 @@
+.sendPopup
+  .sendPopup__overlay
+    .sendPopup__wrapper
+      .sendPopup__close
+        img(src="/content/close.png" alt="close") 
+      h2.sendPopup__headline присылайте ваши проекты!
+      .sendPopup__forms
+        .input.sendPopup__input
+          input.input__fuild.input__name(type="text" name="name" placeholder="Ваше имя" required)
+        .input.sendPopup__input
+          input.input__fuild(type="text" name="link" placeholder="Ссылка на ваш проект" required)
+      .sendPopup__buttons
+        button.sendPopup__send.sendPopup__button(type="submit")
+          p.sendPopup__text отправить

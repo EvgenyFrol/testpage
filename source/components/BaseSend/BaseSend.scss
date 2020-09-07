@@ -1,0 +1,73 @@
+.send {
+  width: 100%;
+  background: #F7654A;
+  height: auto;
+
+  &__wrapper {
+    margin-top: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    font: bold 48px/71px "Oswald", normal;
+    color: #fff;
+
+    @media (max-width: 1024px) {
+      font-size: 36px;
+      line-height: 59px;
+    }
+
+    @media (max-width: 640px) {
+      text-align: center;
+      font-size: 24px;
+      line-height: 46px;
+    }
+  }
+
+  &__button {
+    width: 175px;
+    height: 49px;
+
+    .send__icon {
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+
+    .send__text {
+      font: bold 14px/21px "Oswald", normal;
+      color: #000;
+    }
+
+    @media (max-width: 640px) {
+      margin: 20px;
+    }
+  }
+
+  &__text {
+    font: bold 24px/36px "Oswald", normal;
+    color: #fff;
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 640px) {
+      font: bold 16px/28px "Oswald", normal;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    display: flex;
+
+    .button__send {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

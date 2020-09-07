@@ -1,0 +1,56 @@
+.projects {
+
+  &__card {
+    .projects__block {
+      width: 55px;
+      height: 6px;
+      background: #F7654A;
+      margin-top: 45px;
+      margin-bottom: 15px;
+      transition: width 1s ease;
+    }
+
+    .projects__name {
+      font: 500 24px/36px "Oswald", normal;
+      color: #404149;
+      text-align: left;
+      margin-bottom: 20px;
+
+      @media (max-width:640px) {
+        text-align: center !important;
+      }
+    }
+
+    .projects__text {
+      font: normal 16px/22px "Open Sans", normal;
+      color: #999999;
+      text-align: left;
+      transition: transform 0.5s ease;
+      transition: color 1s ease;
+
+      @media (max-width:640px) {
+        text-align: center !important;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .projects__block {
+        width: 100%;
+      }
+
+      .projects__text {
+        color: #000;
+      }
+    }
+
+    &__image {
+
+      @media (max-width:640px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

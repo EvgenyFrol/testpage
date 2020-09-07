@@ -1,0 +1,1 @@
+import './BaseFooter.scss';

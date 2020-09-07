@@ -1,0 +1,7 @@
+mixin projects(obj)
+  .projects__card
+    .projects__image
+      img(src= obj.image alt= obj.title)
+    .projects__block
+    h3.projects__name= obj.name
+    p.projects__text= obj.text

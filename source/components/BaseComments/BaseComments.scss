@@ -1,0 +1,42 @@
+.comments {
+
+  &__card {
+
+    &:hover {
+      cursor: pointer;
+
+      .comments__text {
+        color: #000;
+      }
+
+      .comments__title {
+        &--span {
+          color:  #F7654A;
+      }
+    }
+  }
+}
+  &__text {
+    font: normal 14px/21px "Open Sans", normal;
+    color: #999;
+    margin: 20px 20px 38px 20px;
+    transition: color 0.3s ease;
+  }
+
+  &__logo {
+    margin-left: 20px;
+    transform: rotate(0deg);
+  }
+
+  &__title {
+    font: bold 21px/31px "Oswald", normal;
+    color: #000;
+
+    &--span {
+      font: bold 21px/31px "Oswald", normal;
+      color: #000;
+      transition: color 0.2s ease; 
+      margin-left: 3px;
+    }
+  }
+}

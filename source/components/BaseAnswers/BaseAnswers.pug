@@ -1,0 +1,8 @@
+mixin answers(ans)
+  .answers__card
+    .answers__header
+      .answers__icon
+        img.answers__logo(src= ans.icon alt= ans.alt)
+      h5.answers__name= ans.title
+    .answers__body
+      p.answers__text= ans.desc

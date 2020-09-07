@@ -1,0 +1,47 @@
+.work {
+
+  &__image {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  &__card {
+    width: auto;
+    height: auto;
+    border: 1px solid transparent;
+    transition: transform 0.5s linear;
+    padding: 10px 0;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
+    @media (max-width:1024px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width:640px) {
+      padding: 0  10px;
+    }
+  }
+
+  &__desc {
+    font: bold 21px/31px "Oswald", normal;
+    color: #000;
+    text-transform: uppercase;
+    margin: 15px 0px 59px 0px;
+
+    @media (max-width:1024px) {
+      margin: 15px 0px 59px 0px;
+      font: bold 18px/27px "Oswald", normal;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+      @media (max-width:640px) {
+        margin: 15px 0px 59px 0px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.feedbackPopup
+  .feedbackPopup__overlay
+    .feedbackPopup__wrapper
+      .feedbackPopup__close
+        img(src="/content/close.png" alt="close")
+      h2.feedbackPopup__headline отправьте заявку
+      p.feedbackPopup__desc и мы с вами свяжемся
+      .feedbackPopup__inputs
+        input.feedbackPopup__input.feedbackPopup__input--name(type="text" name="name" value="" placeholder="Имя" required) 
+        input.feedbackPopup__input.feedbackPopup__input--email(type="email" name="email" value="" placeholder="Электронная Почта" required)
+        input.feedbackPopup__input.feedbackPopup__input--phone(type="text" name="phone" value="" placeholder="Номер Телефона" required)
+        input.feedbackPopup__input.feedbackPopup__input--file#file(type="file" name="summary" value="" placeholder="Резюме")
+        label.feedbackPopup__file(for="file")
+          span.feedbackPopup__text.feedbackPopup__text--file#feedbackPopup__file Выберите файл
+      .feedbackPopup__buttons
+        button.feedbackPopup__send.feedbackPopup__button(type="submit")
+          p.feedbackPopup__text отправить

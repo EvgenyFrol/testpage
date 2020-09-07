@@ -1,0 +1,10 @@
+mixin contacts(cont)
+  .col-lg-3.col-sm-6.col-md-6.text-center.contacts__card
+    .contacts__image
+      img(src= cont.image alt= cont.alt)
+    p.contacts__name= cont.name
+    .contacts__data
+      p
+      .contacts__item(href= cont.href1)= cont.item1
+      p
+      .contacts__item(href= cont.href2)= cont.item2

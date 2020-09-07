@@ -1,0 +1,29 @@
+- var slides = [
+- {
+-    image: 'https://www.utrechtmarketing.nl/wp-content/uploads/2017/07/header-domtoren-ramon-mosterd-2560x0-c-default.jpg',
+-    alt: 'slide',
+- },
+- {
+-    image: 'http://gtc.com.pl/wp-content/uploads/ABC1.jpg',
+-    alt: 'slide',
+- },
+- {
+-    image: 'https://energylight.net/assets/Uploads/24c00680b7/23_048_Turanga_116_L-v2.jpg',
+-    alt: 'slide',
+- },
+- {
+-    image: 'http://www.tatilkalbi.com/img/oteller/pictures/Granada_Luxury_Alanya_Genel_231044_5a870325de6da.jpg',
+-    alt: 'slide',
+- },
+- ]
+
+section.slider#slider
+  .container-fluid.p-0.slider-carousel
+    .swiper-container.carousel
+      .swiper-wrapper.carousel__wrapper
+        each item in slides
+          .swiper-slide.carousel__slide
+            img.carousel__image(src= item.image alt= item.alt)
+      .swiper-button-prev.carousel__prev
+      .swiper-button-next.carousel__next
+      .swiper-scrollbar.slider-scrollbar

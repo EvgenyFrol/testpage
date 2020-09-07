@@ -1,0 +1,53 @@
+.contacts {
+
+  &__image {
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    font: bold 24px/36px "Oswald", normal;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &__card {
+    transition: 0.5s;
+    margin: 15px 0 25px 0; 
+
+    &:last-child {
+      padding-top: 11px;
+    }
+  }
+
+  &__item {
+    font: bold 24px/36px "Oswald", normal;
+    color: #000;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    &:active {
+      color: #9c1200;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #F7654A;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 50px 0;
+  }
+}

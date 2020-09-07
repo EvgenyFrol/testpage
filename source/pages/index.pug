@@ -1,0 +1,194 @@
+extends ../layout/layout.pug
+block append head
+  title Главная
+block append body
+    include ../components/BaseBanner/BaseBanner.pug
+    include ../components/BaseProjects/BaseProjects.pug
+    section#projects.projects
+      .container.projects__wrapper
+        h2.projects__title наши самые большие проекты
+        .swiper-container.swiper-projects
+          .swiper-wrapper
+            .swiper-slide.projects__cards
+              +projects({
+                image: '/content/stadium.png',
+                alt: 'project image',
+                name: 'Газпром Арена',
+                text: 'Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для развития на следующие десятилетия. Мы очень рады данному еву.'
+              })
+            .swiper-slide.projects__cards
+              +projects({
+                image: '/content/stadium.png',
+                alt: 'project image',
+                name: 'Газпром Арена',
+                text: 'Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для развития на следующие десятилетия. Мы очень рады данному еву.'
+              })
+            .swiper-slide.projects__cards
+              +projects({
+                image: '/content/stadium.png',
+                alt: 'project image',
+                name: 'Газпром Арена',
+                text: 'Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для развития на следующие десятилетия. Мы очень рады данному еву.'
+              })
+        .projects__prev
+          .swiper-button-prev.project-prev
+        .projects__next
+          .swiper-button-next.project-next
+
+    include ../components/BaseSend/BaseSend.pug
+    include ../components/BaseWork/BaseWork.pug
+    section.work#work
+      h2.work__title чем мы занимаемся?
+      .container-fluid.p-1.work__wrapper
+        .container
+          .row.text-center.justify-content-center
+            +works({
+              name: "Строительство офисных зданий",
+              image: "/content/work__logo.svg"
+            })
+            +works({
+              name: "Строительство офисных зданий",
+              image: "/content/work__logo.svg"
+            })
+            +works({
+              name: "Строительство офисных зданий",
+              image: "/content/work__logo.svg"
+            })
+            +works({
+              name: "Строительство офисных зданий",
+              image: "/content/work__logo.svg"
+            })
+            +works({
+              name: "Строительство офисных зданий",
+              image: "/content/work__logo.svg"
+            })
+            +works({
+              name: "Строительство офисных зданий",
+              image: "/content/work__logo.svg"
+            })
+
+    include ../components/BaseSlider/BaseSlider.pug
+
+    include ../components/BaseAnswers/BaseAnswers.pug
+    section#answers.answers
+      h2.answers__title ответы на вопросы
+      .container.answers__items
+        +answers({
+          title: 'РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?',
+          desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.',
+          icon: '/content/Polygon.png',
+          alt: 'icon',
+        })
+        +answers({
+          title: 'РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?',
+          desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.',
+          icon: '/content/Polygon.png',
+          alt: 'icon',
+        })
+        +answers({
+          title: 'РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?',
+          desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.',
+          icon: '/content/Polygon.png',
+          alt: 'icon',
+        })
+        +answers({
+          title: 'РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?',
+          desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.',
+          icon: '/content/Polygon.png',
+          alt: 'icon',
+        })
+
+    include ../components/BasePartners/BasePartners.pug
+    section.partners#partners
+      h2.partners__headline наши партнеры
+      .container-fluid.partners__wrapper
+        .container.partners__cards
+          .row.text-center.justify-content-center
+            +partners({
+              image: '/content/1.png'
+            })
+            +partners({
+              image: '/content/2.jpg'
+            })
+            +partners({
+              image: '/content/3.png'
+            })
+            +partners({
+              image: '/content/logo.jpg'
+            })
+            +partners({
+              image: '/content/5.jpg'
+            })
+
+    include ../components/BaseComments/BaseComments.pug
+    section.comments#comments
+      .container.comments__container
+        h2.comments__headline отзывы о работе с нами
+        .swiper-container.swiper-comments
+          .swiper-wrapper
+            .swiper-slide
+              +comments({
+                name: 'Иванов Иван,',
+                company: 'ООО “Газпром-Арена',
+                desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+                logo: '/content/logo__comments.png',
+                alt: 'logo__comments',
+              })
+            .swiper-slide
+              +comments({
+                name: 'Иванов Иван,',
+                company: 'ООО “Газпром-Арена',
+                desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+                logo: '/content/logo__comments.png',
+                alt: 'logo__comments',
+              })
+            .swiper-slide
+              +comments({
+                name: 'Иванов Иван,',
+                company: 'ООО “Газпром-Арена',
+                desc: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+                logo: '/content/logo__comments.png',
+                alt: 'logo__comments',
+              })
+        .comments__prev
+          .swiper-button-prev.comments-prev
+        .comments__next
+          .swiper-button-next.comments-next
+
+    include ../components/BaseFeedback/BaseFeedback.pug
+    include ../components/BaseContacts/BaseContacts.pug
+    section.contacts#contacts
+      h2.contacts__title контакты
+      .container
+        .row 
+          +contacts({
+            image: '/content/address.png',
+            alt: 'address',
+            name: 'адрес',
+            item1: 'невский проспект 140, офис 140-142'
+          })
+          +contacts({
+            image: '/content/phone.png',
+            alt: 'phone',
+            name: 'телефон',
+            href1: 'tel:8 (812) 111-22-33',
+            href2: 'tel:8 (812) 111-22-33',
+            item1: '8 (812) 111-22-33',
+            item2: '8 (812) 111-22-33',
+          })
+          +contacts({
+            image: '/content/clocks.png',
+            alt: 'clocks',
+            name: 'время работы:',
+            item1: 'пн-сб 10:00 - 20:00'
+          })
+          +contacts({
+            image: '/content/mail.png',
+            alt: 'mail',
+            name: 'e-mail:',
+            href1: 'mailto:info@vip.ru',
+            item1: 'info@vip.ru',
+          })
+
+    include ../components/BaseSendPopup/BaseSendPopup.pug
+    include ../components/BaseFeedbackPopup/BaseFeedbackPopup.pug
